@@ -8,7 +8,7 @@
 public class GameOfLife {
 
 	public static void main(String[] args) {
-		String fileName = "line.dat";
+		String fileName = args[0];
 
 		//// Uncomment the test that you want to execute, and re-compile.
 		//// (Run one test at a time).
@@ -184,7 +184,7 @@ public class GameOfLife {
 			for (int j = 1; j < arr[i].length - 1; j++) {
 				System.out.printf("%3s", arr[i][j]);
 			}
-			System.err.println();
+			System.out.println();
 		}
 	}
 
